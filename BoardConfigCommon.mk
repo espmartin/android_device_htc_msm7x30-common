@@ -87,3 +87,32 @@ WIFI_DRIVER_FW_PATH_AP := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_P2P := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/bcmdhd/parameters/firmware_path"
 BOARD_LEGACY_NL80211_STA_EVENTS := true
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/htc/msm7x30-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    app.te \
+    bluetooth.te \
+    device.te \
+    domain.te \
+    drmserver.te \
+    file_contexts \
+    files \
+    file.te \
+    hci_init.te \
+    healthd.te \
+    init.te \
+    init_shell.te \
+    keystore.te \
+    kickstart.te \
+    mediaserver.te \
+    rild.te \
+    surfaceflinger.te \
+    system.te \
+    ueventd.te \
+    untrusted_app.te \
+    vold.te \
+    wpa.te \
+    wpa_socket.te
