@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-	com.android.future.usb.accessory
+	com.android.future.usb.accessory \
+	setup_fs
 
 # Torch
 PRODUCT_PACKAGES += \
