@@ -129,6 +129,12 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.dump();
 #endif
 
+    bool isVideo = !strcmp(params.get(android::CameraParameters::KEY_RECORDING_HINT), "true");
+
+    if (isVideo) {
+        params.set(android::CameraParameters::KEY_ROTATION, "0");
+    }
+
 #if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
     params.dump();
