@@ -128,7 +128,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	com.qc.hardware=true \
 	debug.composition.type=gpu \
 	debug.sf.hw=1 \
-	debug.egl.hw=1
+	debug.egl.hw=1 \
+	debug.egl.recordable.rgba8888=1
 
 # Low Power Audio
 PRODUCT_PROPERTY_OVERRIDES += \
