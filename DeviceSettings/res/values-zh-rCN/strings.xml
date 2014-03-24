@@ -15,8 +15,8 @@
     <string name="s2w_allow_stroke_summary">左右滑动均可解锁</string>
     <string name="s2w_min_distance_title">最小距离</string>
     <string name="s2w_min_distance_summary">调整最小滑动距离</string>
-    <string name="s2w_register_threshold_title">寄存器</string>
-    <string name="s2w_register_threshold_summary">应用寄存器</string>
+    <string name="s2w_register_threshold_title">缓存值</string>
+    <string name="s2w_register_threshold_summary">调整缓存器值大小</string>
     <string name="doubletap2wake_title">双击唤醒</string>
     <string name="doubletap2wake_summaryOn">双击唤醒 启用</string>
     <string name="doubletap2wake_summaryOff">双击唤醒 禁用</string>
