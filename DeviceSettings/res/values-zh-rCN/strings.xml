@@ -4,8 +4,6 @@
     <string name="category_general_title">普通</string>
     <string name="category_sweep2wake_title">滑屏解锁</string>
     <string name="category_doubletap2wake_title">双击唤醒</string>
-    <string name="dyn_fsync_title">动态同步控制</string>
-    <string name="dyn_fsync_summary">屏幕亮时, 关闭同步.屏幕关时, 打开同步. 关闭此选项可获得更好的性能体验.</string>
     <string name="fast_charge_title">强制快速充电</string>
     <string name="fast_charge_summary">强制快速充电只要连接usb电源（例如许多汽车充电器）.</string>
     <string name="sweep2wake_title">滑屏解锁</string>
