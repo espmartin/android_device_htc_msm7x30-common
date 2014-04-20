@@ -31,6 +31,7 @@ public class DevicePreferenceActivity extends PreferenceFragment implements
         OnPreferenceChangeListener {
 
     public static final String KEY_FAST_CHARGE = "fast_charge";
+    public static final String KEY_SOFT_FLASH = "soft_flash";
     public static final String KEY_SWEEP2WAKE = "sweep2wake";
     public static final String KEY_ALLOW_STROKE = "s2w_allow_stroke";
     public static final String KEY_MIN_DISTANCE = "s2w_min_distance";
@@ -41,6 +42,7 @@ public class DevicePreferenceActivity extends PreferenceFragment implements
 
     private Context context;
     private CheckBoxPreference mFastCharge;
+    private CheckBoxPreference mSoftFlash;
     private SwitchPreference mSweep2Wake;
     private CheckBoxPreference mAllowStroke;
     private SeekBarPreference mMinDistance;
@@ -59,6 +61,10 @@ public class DevicePreferenceActivity extends PreferenceFragment implements
         mFastCharge = (CheckBoxPreference) findPreference(KEY_FAST_CHARGE);
         mFastCharge.setChecked(FastCharge.isEnabled());
         mFastCharge.setEnabled(FastCharge.isSupported());
+
+        mSoftFlash = (CheckBoxPreference) findPreference(KEY_SOFT_FLASH);
+        mSoftFlash.setChecked(SoftFlash.isEnabled());
+        mSoftFlash.setEnabled(SoftFlash.isSupported());
 
         mSweep2Wake = (SwitchPreference) findPreference(KEY_SWEEP2WAKE);
         mSweep2Wake.setChecked(Sweep2Wake.isEnabled());
@@ -98,6 +104,12 @@ public class DevicePreferenceActivity extends PreferenceFragment implements
                 FastCharge.enable(context);
             else
                 FastCharge.disable(context);
+            return true;
+        } else if (preference == mSoftFlash) {
+            if (mSoftFlash.isChecked())
+                SoftFlash.enable(context);
+            else
+                SoftFlash.disable(context);
             return true;
         } else if (preference == mAllowStroke) {
             if (mAllowStroke.isChecked())

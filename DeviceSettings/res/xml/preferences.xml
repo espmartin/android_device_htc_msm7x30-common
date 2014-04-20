@@ -11,6 +11,11 @@
             android:title="@string/fast_charge_title"
             android:summary="@string/fast_charge_summary"
             android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="soft_flash"
+            android:title="@string/soft_flash_title"
+            android:summary="@string/soft_flash_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- Sweep2Wake -->
