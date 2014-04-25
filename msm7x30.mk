@@ -83,6 +83,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	power.msm7x30 \
 	lights.msm7x30 \
+	memtrack.msm7x30 \
 	sensors.msm7x30
 
 # Media
